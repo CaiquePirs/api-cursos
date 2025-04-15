@@ -14,6 +14,12 @@ public class CursoController {
 
     @Autowired
     private CursoService cursoService;
-    
+
+    @PostMapping("/create")
+    public CursoEntity create(@RequestBody CursoEntity cursoEntity){
+        cursoEntity.setActive(true);
+        cursoService.create(cursoEntity);
+        return cursoEntity;
+    }
 
 }
