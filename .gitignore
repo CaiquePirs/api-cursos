@@ -18,16 +18,12 @@ target/
 *.iws
 *.iml
 *.ipr
+.mvn
+.idea
+mvnw
+mvnw.cmd
+.gitattributes
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+
+
