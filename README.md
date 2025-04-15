@@ -17,7 +17,7 @@ O aprendizado daqui é muito importante e com certeza você conseguirá sair com
 
 Nesse desafio você desenvolverá uma API fictícia para uma empresa de cursos de programação, onde em um primeiro momento, você deverá utilizar o CRUD, para criação de cursos.
 
-A API deve conter as seguintes funcionalidades:
+API deve conter as seguintes funcionalidades:
 
 - Criação de um novo curso
 - Listagem de todos os cursos
