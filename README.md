@@ -1,18 +1,5 @@
 # Desafio 01 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60" height="60" alt="Java"/>
 
-
-## Introdução 
-
-Faaala Dev,
-
-Sejam todos muito bem-vindos ao primeiro desafio da trilha de Java do Ignite.
-
-Nesse desafio você reforçará de forma prática os **conceitos** que aprendemos nesse módulo.
-
-Como se trata de um desafio, ele necessita de alguns conhecimentos além dos abordados nesse módulo, então é importante ter autonomia para conseguir pesquisar essas coisas caso não saiba como resolver. Por isso, lembre-se, t**enha calma** e **acredite no seu processo.**
-
-O aprendizado daqui é muito importante e com certeza você conseguirá sair com muito conhecimento bacana 💜
-
 ## Sobre o desafio
 
 Nesse desafio você desenvolverá uma API fictícia para uma empresa de cursos de programação, onde em um primeiro momento, você deverá utilizar o CRUD, para criação de cursos.
