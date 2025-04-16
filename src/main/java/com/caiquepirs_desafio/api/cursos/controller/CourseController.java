@@ -22,4 +22,12 @@ public class CursoController {
         return cursoEntity;
     }
 
+    @GetMapping("/search")
+    public List<CourseEntity> searchAll(){
+        return courseService.searchAllCourses();
+    }
+
+
+
+
 }
