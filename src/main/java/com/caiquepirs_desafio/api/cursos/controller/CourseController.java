@@ -1,25 +1,24 @@
 package com.caiquepirs_desafio.api.cursos.controller;
 
-import com.caiquepirs_desafio.api.cursos.model.CursoEntity;
-import com.caiquepirs_desafio.api.cursos.service.CursoService;
+import com.caiquepirs_desafio.api.cursos.model.CourseEntity;
+import com.caiquepirs_desafio.api.cursos.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/course")
-public class CursoController {
+public class CourseController {
 
     @Autowired
-    private CursoService cursoService;
+    private CourseService courseService;
 
     @PostMapping("/create")
-    public CursoEntity create(@RequestBody CursoEntity cursoEntity){
-        cursoEntity.setActive(true);
-        cursoService.create(cursoEntity);
-        return cursoEntity;
+    public CourseEntity create(@RequestBody CourseEntity courseEntity){
+        courseEntity.setActive(true);
+        courseService.create(courseEntity);
+        return courseEntity;
     }
 
     @GetMapping("/search")
