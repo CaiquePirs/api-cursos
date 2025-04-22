@@ -24,13 +24,13 @@ Antes das rotas, vamos entender qual a estrutura (propriedades) que uma task dev
 
 Rotas:
 
-- `POST - /cursos`
+- `POST - /course/create`
 
   Deve ser possível criar um curso no banco de dados, enviando os campos `name` e `category` por meio do `body` da requisição.
 
   Ao criar um curso, os campos: `id`, `created_at`   e `updated_at` devem ser preenchidos automaticamente, conforme a orientação das propriedades acima.
 
-- `GET - /cursos`
+- `GET - /course/search`
 
   Deve ser possível listar todas os cursos salvos no banco de dados.
 

@@ -6,15 +6,14 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
-@Entity(name = "course")
+@Entity(name = "tb_curso")
 @Data
-public class CourseEntity {
+public class Curso {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String name;
     private String category;
     private boolean active;
@@ -27,11 +26,11 @@ public class CourseEntity {
 
 
     public String getStatus() {
-        return active ? "Active" : "Inactive";
+        return active ? "Ativo" : "Inativo";
     }
 
     public void dataCourses(){
-        System.out.printf("Id: " + id, ", name: " + name
+        System.out.printf("Id: " + id, ", nome: " + name
                 + ", category: " + category + ", Status: " + getStatus() +
                 ", created_at: " + created_at.toString() + ", updated_at: " + updated_at.toString());
     }
